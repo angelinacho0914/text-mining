@@ -23,6 +23,7 @@
 
 **Last but not least, the text similarity analysis shows me the following result:**
 ![Text Similarity Result](images/text_similarity.png)
+
 **The first result (top four rows) illustrates the result from comparing r/mamamoo top 50 posts to r/red_velvet top 50 posts. The second result demonstrates the result from comparing r/mamamoo to r/twice, and the last result demonstrates the result from comparing r/mamamoo to r/straykids. Unfortunately, if you look at the collectively, you can not find any differences between them, which is not the result that I expected. However, despite that all three are k-pop groups, and the fans base are kind of similar because usually if you listen to one k-pop group, you will also be involved with other k-pop groups. Therefore, it did explain why it yiels a similar result for all three comparisons.**
 
 
