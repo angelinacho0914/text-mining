@@ -12,7 +12,7 @@
 
 ### 3. Results
 **In the end**
-![Text Summary Result](/assets/images/text_summary_result.png)
+![Text Summary Result](images/text_summary_result.png)
 
 ### 4. Reflection
 ****
