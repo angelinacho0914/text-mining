@@ -15,7 +15,7 @@ def process_information(sub):
             # Split them into individual words
             word = line.split()
             for i in word:
-                i = i.strip(string.punctuation + string.whitespace)
+                i = i.strip(string.punctuation + string.whitespace) # We do not want punctuation and whitespace in our strings
                 i = i.lower()
 
                 h[i] = h.get(i, 0) + 1
@@ -38,7 +38,7 @@ def different_words(hist):
 
 def most_common_words(hist, num, unimportant_words):
     '''
-    Retun a list of given number of most common words in the histogram.
+    Retun a list of given number of most common words in the histogram by using the histogram and excluding the given list of unimportant words.
     '''
     lst = []
     for word, freq in hist.items():

@@ -6,6 +6,9 @@ import string
 
 
 def compare_subreddit(sub1, sub2):
+    '''
+    Compares the similarity (simple ratio, partial ratio, and token sort ratio) of r/mamamoo and other k-pop groups and returns the ratio of each.
+    '''
     mamamoo_lst = add_to_list(sub1)
     other_kpop_group = add_to_list(sub2)
 
@@ -23,7 +26,7 @@ def compare_subreddit(sub1, sub2):
 
 def add_to_list(sub):
     '''
-    Return a list of top 50 post from a given subreddit
+    Return a list of top 50 post from a given subreddit.
     '''
     lst = []
     for item in open_reddit.open_reddit(sub, 50):
@@ -34,7 +37,7 @@ def add_to_list(sub):
 
 
 def main():
-    # print(f'Comparing r/mamamoo and r/red_velvet: {}')
+    # Comparing Mamamoo subreddit to three other k-pop subreddit
     print(compare_subreddit('mamamoo', 'red_velvet'))
     print(compare_subreddit('mamamoo', 'twice'))
     print(compare_subreddit('mamamoo', 'straykids'))
