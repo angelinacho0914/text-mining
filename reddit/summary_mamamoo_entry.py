@@ -1,5 +1,7 @@
 import string
 import open_reddit
+import sentiment_analysis
+import text_similarity
 
 
 def process_information(sub):
@@ -72,6 +74,12 @@ def main():
     print(f'The most common words for r/red_velvet are: {most_common_words(histogram_redvelvet, 10, unimportant_lst)}')
     print(f'The most common words for r/twice are: {most_common_words(histogram_twice, 10, unimportant_lst)}')
     print(f'The most common words for r/straykids are: {most_common_words(histogram_straykids, 10, unimportant_lst)}')
+
+    print(f'Result of sentiment analysis: {sentiment_analysis.sentiment()}')
+
+    print(text_similarity.compare_subreddit('mamamoo', 'red_velvet'))
+    print(text_similarity.compare_subreddit('mamamoo', 'twice'))
+    print(text_similarity.compare_subreddit('mamamoo', 'straykids'))
 
 
 if __name__ == "__main__":
